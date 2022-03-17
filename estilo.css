@@ -1,0 +1,302 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+	font-family: 'Verdana';
+}
+.principal{
+	width: 1300px;
+	margin: auto;
+	box-shadow: 1px 0px 10px 4px rgba(0,0,0,0.59);
+    -webkit-box-shadow: 1px 0px 10px 4px rgba(0,0,0,0.59);
+    -moz-box-shadow: 1px 0px 10px 4px rgba(0,0,0,0.59);
+}
+.minimenu{background-color: black;
+          color: white;
+		  margin: auto;
+		
+		 
+}
+header{background: aquamarine;
+    height: 80px;
+    width: 100%;
+}
+
+.menu ul{
+    float: right;
+    margin-right: 20px;
+}
+.menu ul li{
+    display: inline-block;	
+    margin: 0 5px;
+}
+.menu ul li a{
+    color:azure;
+    font-size: 16px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    
+}
+li a.active, li a:hover{
+    background: #000090;
+    transition: .5s;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.inicio{
+	width: 100%;
+	height: 500px;
+	position: relative;
+
+}
+.inicio img{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+    background-position: center center;
+	background: no-repeat;
+}	
+.inicio h1{
+	position: absolute;
+	top: 200px;
+	left: 150px;
+	font-size: 50px;
+}
+.inicio h4{
+	position: absolute;
+	top: 300px;
+	left: 150px;
+}
+.inicio a{
+	position: absolute;
+	top: 350px;
+	left: 150px;
+}
+.suscribirse{
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	background-color: black;
+	color: white;
+}
+.suscribirse p,.suscribirse form{
+	margin: 30px 20px;
+}
+.planes h2{
+	text-align: center;
+}
+.servicios{
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+}
+.servicios .cuadro{
+	width: 40%;
+	height: 370px;
+	background-color: lightgray;
+	margin: 10px 5px;
+	position: relative;
+
+}
+.servicios .cuadro p{
+	font-size: 12px;
+	text-align: center;
+	margin: auto;
+}
+.servicio .cuadro h3{
+	text-align: center;
+}
+.servicios .cuadro .precio{
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	border-radius: 100%;
+	position: absolute;
+	top: 120px;
+	left: 150px;
+}
+.servicios .cuadro .precio h3{
+	margin-top: 32px;
+
+}
+.servicios .cuadro .item{
+	background-color: #4C526D;
+	color: white;
+	margin-top: 90px;
+	height: 100px;
+}
+.servicios .cuadro .item ul {
+	list-style: none;
+	margin: 40px 20px;
+}
+.servicios .cuadro .boton{
+	margin: 10px 150px;
+}
+
+.titulo{
+	
+	margin: auto;
+	width: 900px;
+	margin-left: 200px;
+	  
+        
+
+}
+
+.menu1 {text-align: center;
+	margin-top: 20px;
+
+
+}
+
+.noticias{
+          border: 1px solid black;
+           width: 410px;
+           float: left;
+           height: 280px;
+           padding: auto;
+           margin: auto;
+           margin-left: 33px;background-color: lightgray; 
+        }
+
+        .nombre{text-align: center;
+                width: auto;
+				background-color: #4C526D;
+				color: white;
+        
+        }
+        
+        .des{width: auto;
+                text-align: center;
+				
+        
+        }
+
+footer{
+	margin-top: 380px;
+	height: 40px;
+	background-color: black;
+	color: white;
+	justify-content: space-between;
+}
+
+
+@media(max-width: 450px){
+	
+	.principal{
+		width: 100%;
+	    text-align: center;}
+
+		.checkbtn{
+			display: block;
+		}
+
+		.menu ul{
+			position: fixed;
+			width: 450px;
+			height: 550px;
+			background: #2c3e50;
+			top: 80px;
+			left: -100%;
+			text-align: center;
+			transition: all .5s;
+		
+		}
+		.menu ul li{
+			display: block;
+			margin: 50px 0;
+			line-height: 30px;
+		}
+		.menu ul li a{
+			font-size: 20px;
+		}
+		li a:hover, li a.active{
+			background: none;
+			color: red;
+		}
+		#check:checked ~ .menu ul{
+			left:0;
+			
+		}
+	
+	.inicio{width: 300px;
+	}
+
+	.inicio img{width: 450px;
+		background: no-repeat;
+	        
+		
+	}	
+	.inicio h1{width: 80px;
+		       font-size: 40px;
+			   margin-right: 220px;
+			  text-align: center;
+			 
+			  }
+	
+	
+	.inicio h4{width: 200px;
+		    font-size:20px;
+			text-align: center;
+			
+	}
+
+	.inicio a{margin-top: 35px;
+	          text-align: center;
+			  margin-left: 49px;
+			}
+
+	.suscribirse{display: block;
+		         width: 450px;
+	             height: 144px;
+				background-color: black;}
+
+	.servicios{display:block;
+		width: 1100px;}
+
+	.precio{position: absolute;
+		height: 100px;
+		width: 100px;}
+
+	.item {padding: auto;
+		position: relative;}
+
+
+	
+	.planes{margin-top: 10px;}
+
+	.titulo{width: 100%;
+	        height: 150px;
+			float: right;
+			margin-right: 12px;}
+
+	.noticias{display: block;height: 200px;}
+
+	footer{margin-top: 477px;width: 450PX;height: 50px;}
+		
+}
+	
+		
+	
+		
+	            
+	
+
+

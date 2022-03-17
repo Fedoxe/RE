@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pago</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #ddeefc;
+	font-family: 'Lato', sans-serif;
+    margin-left: 310px;
+}
+    .formulariotarjeta {
+	background: aquamarine;
+	width: 100%;
+	max-width: 700px;
+	padding: 150px 30px;
+	border-radius: 10px;
+
+
+}
+
+.formulariotarjeta input,
+.formulariotarjeta select,
+.btnenviar {
+	border: 2px solid #CED6E0;
+	font-size: 18px;
+	height: 50px;
+	width: 100%;
+	padding: 5px 12px;
+	transition: .3s ease all;
+	border-radius: 5px;
+    margin-top: 15px;
+}
+
+
+
+.formulariotarjeta .flexbox {
+	display: flex;
+	
+}
+
+.formulariotarjeta .btnenviar {
+	border: none;
+	padding: 10px;
+	font-size: 22px;
+	color: #fff;
+	background: #2364d2;
+	cursor: pointer;
+}
+
+</style>   
+</head>
+<body>
+<form action="recuperatorio.php" class="formulariotarjeta">
+			<div class="grupo">
+				<label for="Numero">Número Tarjeta</label>
+				<input type="text">
+				<label for="inputNombre">Nombre</label>
+				<input type="text">
+			</div>
+			<div class="flexbox">
+				<div class="grupo expira">
+					<label for="selectMes">Expiracion</label>
+					<div class="flexbox">
+						<div class="gruposelect">
+							<select name="mes">
+								<option disabled selected>Mes</option>
+							</select>
+						</div>
+						<div class="gruposelect">
+							<select name="year">
+								<option disabled selected>Año</option>
+							</select>
+						
+						</div>
+					</div>
+				</div>
+
+				<div class="grupo ccv">
+					<label for="inputCCV">CCV</label>
+					<input type="text">
+				</div>
+			</div>
+            <a href="http://localhost/fede/RE/recuperatorio.php?">
+			<button type="submit" class="btnenviar">Enviar</button>
+</a>
+		</form>
+	</div>
+</div>
+    
+</body>
+</html>
